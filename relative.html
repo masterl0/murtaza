@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>static</title>
+    <style>
+        .outer-box{
+            background-color: aqua;
+            text-transform: capitalize;
+        }
+        .inner-box{
+            background-color: red;
+            padding: 10px;
+        }
+        div > div > h1{
+            font-size: 50px;
+            color: whitesmoke;
+        }
+        a{
+
+            text-align: center;
+            border: 2px solid green;
+            background-color:none ;
+            color: black;
+            text-decoration: none;
+            font-size: x-large;
+            font-weight: 200;
+            cursor: pointer;
+            border-radius:4px;
+            transition-duration: 0.5s;
+        }
+        .inner-box1{
+            display: inline-block;
+            position: relative;
+            top: 10px;
+            left: 25%;
+            height: 100px;
+            border: 2px solid white;
+           
+        }
+        .button:hover{
+            background-color: green;
+           
+        }
+        .button1{
+            float: left;
+            margin: 10px;
+            padding: 10px;
+            position: relative;
+            top: 15px;
+        }
+        .button2{
+            float: left;
+            margin: 10px;
+            padding: 10px; 
+            position: relative;
+            top: 15px;
+        }
+        .button3{
+            float: left;
+            margin: 10px;
+            padding: 10px; 
+            position: relative;
+            top: 15px;
+        }
+        .button4{
+            float: left;
+            margin: 10px;
+            padding: 10px;
+            position: relative;
+            top: 15px;
+        }
+        .inner-box1 + div {
+            height: 300px;
+            width: 300px;
+            background-color: rgba(126, 224, 215, 0.781);
+            position: relative;
+            top: 20px;
+            left: 50%;
+            
+        }
+        .outer-box > div h2{
+            color:firebrick;
+            text-transform: capitalize;
+            border: 2px dotted firebrick;
+            display: inline-block;
+        }
+        code{
+            display: block;
+        }
+        .position-box{
+            height: 200px;
+            width: 200px;
+            background-color: green;
+            position: relative;
+            left: 50px;
+            top: 50px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="outer-box">
+        <div class="inner-box">
+        <h1>css position: relative</h1>
+    </div>
+    <div class="inner-box1">
+    <a class="button button1"  href="./fixed.html">fixed position</a>
+    <a class="button button2" href="./relative.html">relative position</a>
+    <a class="button button3" href="./motivational.jpg">absolute position</a>
+    <a class="button button4" href="./motivational.jpg">static position</a>
+</div>
+    <div>
+    <h2> relative position</h2>
+    <code>
+        position: relative;<br>
+        left: 50px;<br>
+        top: 50px;
+    </code>
+     <div class="position-box"></div>
+
+</div>
+    </div>
+    
+</body>
+</html>
